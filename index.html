@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="card">
+<img id="img" class="photo" src="https://w0.peakpx.com/wallpaper/6/491/HD-wallpaper-ocean-waves-under-black-white-clouds-blue-sky-moon-during-nighttime-moon.jpg" alt="">
+            <div id="bac" class="card-body">
+                <h5 id="text" class="card-title">Тун</h5>
+                <p id="mainText" class="card-text">Карангы тундун эн коюу учуру-тан атар алдында.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+let img = document.getElementById('img')
+let text = document.getElementById('text')
+let mainText = document.getElementById('mainText')
+let container = document.getElementById('container')
+let bac = document.getElementById('bac')
+
+setTimeout(() => {
+    img.src ="https://images.unsplash.com/photo-1603299515818-82b7e687a789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzaW5nJTIwc3VufGVufDB8fDB8fHww&w=1000&q=80";
+    text.innerHTML = "Кун";
+mainText.innerHTML = "Кун сени эмес,сен кунду тос"
+    text.style.color = "yellow";
+    text.style.backgroundColor ="brown"
+    text.style.fontFamily = " Arial, Helvetica, sans-serif;"
+    text.style.transform = "rotate(360deg)";
+    text.style.fontSize = "20px"
+    text.style.transition = "4s"
+    mainText.style.color = "orange"
+    mainText.style.boxShadow = "0px 0px 10px 5px orange"
+    mainText.style.transform = "rotate(360deg"
+    mainText.style.transition ="3s"
+
+}, 2000);
+    </script>
+</body>
+</html>
